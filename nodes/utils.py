@@ -90,3 +90,18 @@ class GeneralSwitch:
         else:
             logging.info("GeneralSwitch: invalid select index (ignored)")
             return None, "", selected_index
+
+class Float:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {"value": ("FLOAT", {"default": 0, "step": 0.01, "min":-0xffffffffffffffff, "max":  0xffffffffffffffff, })},
+        }
+
+    RETURN_TYPES = ("FLOAT",)
+    RETURN_NAMES = ("float",)
+    FUNCTION = "execute"
+    CATEGORY = "Yaser/Type"
+
+    def execute(self, value):
+        return (round(value, 3),)

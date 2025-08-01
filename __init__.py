@@ -1,4 +1,4 @@
-from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack
+from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
@@ -8,7 +8,9 @@ NODE_CLASS_MAPPINGS = {
     "IterativeUpscaleWithModelsNode": IterativeUpscaleWithModelsNode,
     "GeneralSwitch": GeneralSwitch,
     "ImageColorMatch": ImageColorMatch,
-    "LoraLoaderStack": LoraLoaderStack
+    "LoraLoaderStack": LoraLoaderStack,
+    "ImageSizeBySide": ImageSizeBySide,
+    "Float": Float,
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
@@ -16,5 +18,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "IterativeUpscaleWithModelsNode": "🔮 Iterative Upscale with Models Node (Yaser)",
     "GeneralSwitch": "🔀 Switch (Any) - Yaser",
     "ImageColorMatch": "🎨 Image Color Match - Yaser",
-    "LoraLoaderStack": "📚 LoRA Loader Stack - Yaser"
+    "LoraLoaderStack": "📚 LoRA Loader Stack - Yaser",
+    "ImageSizeBySide": "📏 ImageSize (Side) - Yaser",
+    "Float": "🔢 Float - Yaser",
 }

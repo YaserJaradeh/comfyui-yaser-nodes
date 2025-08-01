@@ -1,0 +1,6 @@
+torch
+torchvision
+Pillow
+numpy
+packaging
+color-matcher

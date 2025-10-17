@@ -3,6 +3,7 @@ Image utility nodes for Yaser-nodes
 Contains image processing and analysis nodes
 """
 
+import torch
 
 class ImageSizeBySide:
     """

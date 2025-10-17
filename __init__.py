@@ -1,4 +1,4 @@
-from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float, TiledDiffusionNode, SpotDiffusionParams_Yaser, TiledVAEEncode, TiledVAEDecode, UtilRepeatImages
+from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float, TiledDiffusionNode, SpotDiffusionParams_Yaser, TiledVAEEncode, TiledVAEDecode, UtilRepeatImages, WanVideoNAG
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
@@ -16,6 +16,7 @@ NODE_CLASS_MAPPINGS = {
     "TiledVAEEncode": TiledVAEEncode,
     "TiledVAEDecode": TiledVAEDecode,
     "UtilRepeatImages": UtilRepeatImages,
+    "WanVideoNAG": WanVideoNAG,
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
@@ -31,4 +32,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "TiledVAEEncode": "📦 Tiled VAE Encode - Yaser",
     "TiledVAEDecode": "📦 Tiled VAE Decode - Yaser",
     "UtilRepeatImages": "🔁 Repeat Images - Yaser",
+    "WanVideoNAG": "📹 Wan Video NAG - Yaser",
 }

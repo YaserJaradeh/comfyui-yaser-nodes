@@ -5,6 +5,7 @@ from .lora import LoraLoaderStack
 from .image_utils import ImageSizeBySide, UtilRepeatImages
 from .tiled_diffusion import TiledDiffusionNode, SpotDiffusionParams
 from .tiled_vae import TiledVAEEncode, TiledVAEDecode
+from .wan_video_nag import WanVideoNAG
 
 
 __all__ = [
@@ -19,4 +20,5 @@ __all__ = [
     "TiledVAEEncode",
     "TiledVAEDecode",
     "UtilRepeatImages",
+    "WanVideoNAG",
 ]

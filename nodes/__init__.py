@@ -3,6 +3,8 @@ from .image import ImageColorMatch
 from .utils import GeneralSwitch, Float
 from .lora import LoraLoaderStack
 from .image_utils import ImageSizeBySide
+from .tiled_diffusion import TiledDiffusionNode, SpotDiffusionParams
+from .tiled_vae import TiledVAEEncode, TiledVAEDecode
 
 
 __all__ = [
@@ -12,4 +14,8 @@ __all__ = [
     "LoraLoaderStack",
     "ImageSizeBySide",
     "Float",
+    "TiledDiffusionNode",
+    "SpotDiffusionParams",
+    "TiledVAEEncode",
+    "TiledVAEDecode",
 ]

@@ -45,3 +45,20 @@ class ImageSizeBySide:
             result = (0,)
             
         return {"ui": {"text": str(result[0])}, "result": result}
+
+class UtilRepeatImages:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "images": ("IMAGE",),
+                "amount": ("INT", {"default": 1, "min": 1, "max": 1024}),
+            }
+        }
+
+    RETURN_TYPES = ("IMAGE",)
+    CATEGORY = "Yaser/Utils"
+    FUNCTION = "rebatch"
+
+    def rebatch(self, images: torch.Tensor, amount):
+        return (images.repeat(amount, 1, 1, 1),)

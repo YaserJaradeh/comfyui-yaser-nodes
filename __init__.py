@@ -1,4 +1,5 @@
 from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float, TiledDiffusionNode, SpotDiffusionParams_Yaser, TiledVAEEncode, TiledVAEDecode, UtilRepeatImages, WanVideoNAG
+from .nodes.controlnet import NODE_CLASS_MAPPINGS as CONTROLNET_NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS as CONTROLNET_NODE_DISPLAY_NAME_MAPPINGS
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
@@ -19,6 +20,9 @@ NODE_CLASS_MAPPINGS = {
     "WanVideoNAG": WanVideoNAG,
 }
 
+# Add controlnet nodes
+NODE_CLASS_MAPPINGS.update(CONTROLNET_NODE_CLASS_MAPPINGS)
+
 # A dictionary that contains the friendly/humanly readable titles for the nodes
 NODE_DISPLAY_NAME_MAPPINGS = {
     "IterativeUpscaleWithModelsNode": "🔮 Iterative Upscale with Models Node (Yaser)",
@@ -34,3 +38,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "UtilRepeatImages": "🔁 Repeat Images - Yaser",
     "WanVideoNAG": "📹 Wan Video NAG - Yaser",
 }
+
+# Add controlnet display names
+NODE_DISPLAY_NAME_MAPPINGS.update(CONTROLNET_NODE_DISPLAY_NAME_MAPPINGS)

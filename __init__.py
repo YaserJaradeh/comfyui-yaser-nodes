@@ -1,4 +1,4 @@
-from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float, TiledDiffusionNode, SpotDiffusionParams_Yaser, TiledVAEEncode, TiledVAEDecode, UtilRepeatImages, WanVideoNAG
+from .nodes import IterativeUpscaleWithModelsNode, GeneralSwitch, ImageColorMatch, LoraLoaderStack, ImageSizeBySide, Float, TiledDiffusionNode, SpotDiffusionParams, TiledVAEEncode, TiledVAEDecode, UtilRepeatImages, WanVideoNAG
 from .nodes.controlnet import NODE_CLASS_MAPPINGS as CONTROLNET_NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS as CONTROLNET_NODE_DISPLAY_NAME_MAPPINGS
 
 # A dictionary that contains all nodes you want to export with their names
